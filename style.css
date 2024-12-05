@@ -1,0 +1,155 @@
+/* :root {
+    --bg-color-light: white;
+    --bg-color-dark: black;
+
+    --text-color: black;
+    --text-color: white;
+
+    --btn-light: white;
+    --btn-dark: black;
+
+    --shadow-light: white;
+    --shadow-dark: black;
+} */
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 100px;
+} 
+
+h4 {
+    font-size: 30px;
+    color: #353434;
+    text-shadow: 2px 2px 2px #595858;;
+}
+
+
+.calculator {
+    background-color: black;
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    height: fit-content;
+    border: 1px;
+    border-style: dashed;
+    border-color: rgb(91, 90, 90);
+    box-shadow: 5px 5px 9px #4a4949;
+}
+
+.display {
+    background-color: rgb(68, 67, 67);
+    width: 100%;
+    border-radius: 15px;
+    height: 50px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-right: 10px;
+    font-size: 40px;
+    box-shadow: -3px -3px 3px #626060;
+    
+}
+
+.btn {
+    height: 40px;
+    width: 100%;
+    border: 0;
+    color: rgb(138, 137, 137);
+    background-color: #151515;
+    box-shadow: 2px 3px 1px #353434;
+
+}
+
+.btn-operator {
+    height: 40px;
+    width: 100%;
+    border: 0;
+    color: rgb(138, 137, 137);
+    background-color: #151515;
+    box-shadow: 2px 3px 1px #353434;
+
+
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+    border: 0;
+    width: auto;
+
+}
+
+.clear-button {
+    margin-top: 10px;
+    height: 40px;
+    width: 75%;
+    border: 0;
+    color: rgb(138, 137, 137);
+    background-color: #151515;
+    box-shadow: 2px 3px 1px #353434;
+
+}
+
+.delete-button {
+    margin-top: 10px;
+    height: 40px;
+    border: 0;
+    border-radius: 75%;
+    width: 23%;
+    border: 0;
+    color: white;
+    background-color: #151515;
+    margin-left: 2px;
+    
+}
+
+
+/* ----------------------------------------- */
+ body.light-mode {
+    background-color: white;
+ }
+
+body.light-mode h4 {
+    font-size: 30px;
+    color: #f39c12;
+    text-shadow: 2px 2px 2px #7c7b7b;
+}
+
+body.light-mode .calculator {
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-style: dashed;
+    border-color: rgb(91, 90, 90);
+    box-shadow: 5px 5px 9px #abaaaa;
+ }
+
+ body.light-mode .btn {
+     background-color: #333;
+     color: #fff;
+ }
+
+ body.light-mode .display {
+      background-color: #6e6d6d;
+      color: #fff;
+ }
+
+ body.light-mode .btn-operator {
+     background-color: #f39c12;
+ }
+
+ body.light-mode .clear-button {
+     background-color: #e74c3c;
+ }
+
+ body.light-mode .delete-button {
+     background-color: #3498db;
+    box-shadow: 2px 3px 3px #246e9e;
+
+ }
