@@ -52,6 +52,13 @@ h4 {
     padding-right: 10px;
     font-size: 40px;
     box-shadow: -3px -3px 3px #626060;
+    /* text-overflow: clip; */
+    /* min-height: 30px;
+    min-width: ; */
+    /* word-wrap: break-word; */
+    /* text-size-adjust: auto; */
+    overflow-x: auto;
+
     
 }
 
@@ -69,6 +76,7 @@ h4 {
     height: 40px;
     width: 100%;
     border: 0;
+    font-size: large;
     color: rgb(138, 137, 137);
     background-color: #151515;
     box-shadow: 2px 3px 1px #353434;
@@ -111,7 +119,31 @@ h4 {
 }
 
 
-/* ----------------------------------------- */
+/* ------------ Hover STYLING -------------------- */
+.btn:hover {
+    color: rgb(155, 153, 153);
+    background-color: #2e2d2d;
+    box-shadow: -2px -3px 1px #373737;
+}
+
+.btn-operator:hover {
+    background-color: #2e2d2d;
+    box-shadow: -2px -3px 1px #373737;
+}
+
+.clear-button:hover {
+    background-color: #2e2d2d;
+    box-shadow: -2px -3px 1px #373737;
+}
+
+.delete-button:hover {
+    background-color: #2e2d2d;
+    box-shadow: -2px -3px 1px #373737;
+}
+
+
+
+/* ------------ LIGHT MODE STYLING ----------------------------- */
  body.light-mode {
     background-color: white;
  }

@@ -81,3 +81,38 @@ toggleModeButton.addEventListener("click", () => {
     ? "☀️"
     : "🌙"; // Update button icon
 });
+
+// Delete last value from user input
+// function deleteItem(textContent) {
+//   if (currentNumber === "") return; //do nothing
+//   if (currentNumber !== "")
+//     currentNumber.textContent = currentNumber.textContent.slice(0, -1);
+// }
+
+// function deleteItem(value) {
+//   // Ensure the element and its content exist before modifying
+//   if (currentNumber && currentNumber.textContent !== "") {
+//     currentNumber.textContent = currentNumber.value.slice(0, -1);
+//   }
+// }
+
+// function deleteItem(currentNumber) {
+//   // Ensure the element and its content exist before modifying
+//   if (currentNumber && currentNumber.value !== "") {
+//     currentNumber = currentNumber.value.slice(0, -1);
+//     updateDisplay(currentNumber);
+//   }
+// }
+
+// Function to delete last character from user input
+function deleteItem() {
+  // If currentNumber is empty, do nothing
+  if (currentNumber === "") return;
+
+  // Remove last character from currentNumber -- informs to start from the first character "0" and exclude last character "-1"
+  // in this instance "0" represents the first character and "-1" is the last character of the input
+  currentNumber = currentNumber.slice(0, -1);
+
+  // Update the display with the new currentNumber
+  updateDisplay(currentNumber);
+}
